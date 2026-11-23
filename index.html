@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>彈幕 for YouTube</title>
+<meta name="description" content="在 YouTube 影片上發彈幕，和看同一部影片的人一起即時吐槽。">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><img src="icon.svg" alt="" width="32" height="32"><span data-i18n="title">彈幕 for YouTube</span></a>
+  <select id="lang" aria-label="Language"></select>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <h1 data-i18n="tagline"></h1>
+      <p data-i18n="heroDesc"></p>
+      <div class="cta">
+        <a id="install" class="btn primary" href="#" data-i18n="install"></a>
+        <span id="soon" class="soon" data-i18n="comingSoon"></span>
+        <a class="btn" href="#support" data-i18n="support"></a>
+      </div>
+    </div>
+    <div class="hero-demo" aria-hidden="true">
+      <img src="screenshot.png" alt="">
+    </div>
+  </section>
+
+  <section>
+    <h2 data-i18n="featuresTitle"></h2>
+    <div class="grid">
+      <div class="card"><div class="emoji">⏱️</div><h3 data-i18n="f1t"></h3><p data-i18n="f1d"></p></div>
+      <div class="card"><div class="emoji">🌏</div><h3 data-i18n="f2t"></h3><p data-i18n="f2d"></p></div>
+      <div class="card"><div class="emoji">🎨</div><h3 data-i18n="f3t"></h3><p data-i18n="f3d"></p></div>
+      <div class="card"><div class="emoji">🛡️</div><h3 data-i18n="f4t"></h3><p data-i18n="f4d"></p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-i18n="howTitle"></h2>
+    <ol class="steps">
+      <li data-i18n="h1"></li>
+      <li data-i18n="h2"></li>
+      <li data-i18n="h3"></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2 data-i18n="roadmapTitle"></h2>
+    <ul class="roadmap">
+      <li data-status="done"><span class="tag"></span><span data-i18n="r1"></span></li>
+      <li data-status="doing"><span class="tag"></span><span data-i18n="r2"></span></li>
+      <li data-status="next"><span class="tag"></span><span data-i18n="r3"></span></li>
+      <li data-status="next"><span class="tag"></span><span data-i18n="r4"></span></li>
+      <li data-status="next"><span class="tag"></span><span data-i18n="r5"></span></li>
+      <li data-status="next"><span class="tag"></span><span data-i18n="r6"></span></li>
+    </ul>
+  </section>
+
+  <section id="support" class="support">
+    <h2 data-i18n="supportTitle"></h2>
+    <p data-i18n="supportDesc"></p>
+    <div class="cta">
+      <a id="kofi" class="btn kofi" target="_blank" rel="noopener" data-i18n="kofi"></a>
+      <a id="ecpay" class="btn ecpay" target="_blank" rel="noopener" data-i18n="ecpay"></a>
+      <span id="supportSoon" class="soon" data-i18n="supportSoon"></span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <a href="privacy.html" data-i18n="privacy"></a>
+  <a id="contact" data-i18n="contact"></a>
+  <p data-i18n="notOfficial"></p>
+</footer>
+
+<script src="site-config.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
